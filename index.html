@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocador de Ponto e Vírgula</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <main>
+        <div id="main-content">
+            <div id="input-div">
+                <textarea id="input-text" spellcheck="false" placeholder="Digite o código para ser corrigido"></textarea>
+            </div>
+            <button id="colocarPontoVirgula-button" onclick="colocarPontoVirgula()">Colocar</button>
+            <div id="output-div">
+                <textarea id="output-text" spellcheck="false"></textarea>
+            </div>
+        </div>
+        <div id="copy-button-div">
+            <button id="copy-button" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
