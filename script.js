@@ -10,7 +10,6 @@ function colocarPontoVirgula() {
             lista_linhas[i] = lista_linhas[i].slice(0, -1);
         }
         linha = lista_linhas[i].trim();
-        // if(linha.charAt(0) != '#' && !linha.includes('//') && !linha.includes('{') && !linha.includes('}') && lista_linhas[i] != ''){
         if(linha.charAt(0) != '#' && !linha.includes('//') && !['{', '}', ','].includes(linha.charAt(linha.length - 1)) && lista_linhas[i] != ''){
             lista_linhas[i] += ';'
         }
